@@ -1,0 +1,15 @@
+{
+    "validUser":{
+        "userName" : "practice",
+        "password" : "SuperSecretPassword!"
+    },
+    "invalidUser":{
+        "userName" : "nihitgarg005@gmail.com",
+        "password" : "SuperSecretPassword!"
+    },
+    "invalidPassword":{
+        "userName" : "practice",
+        "password" : "Password@12342"
+    }
+
+}
