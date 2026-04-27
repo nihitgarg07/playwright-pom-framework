@@ -10,6 +10,10 @@
     "invalidPassword":{
         "userName" : "practice",
         "password" : "Password@12342"
+    },
+    "newUser":{
+        "userName" : "practice",
+        "password" : "Password@12342"
     }
 
 }

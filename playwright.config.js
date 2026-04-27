@@ -41,7 +41,8 @@ export default defineConfig({
             viewport: {width:1920,height:1000},
             screenshot:'on',
             video:'on',
-            trace:'on'
+            trace:'on',
+            baseURL:'https://practice.expandtesting.com/'
        },
            
 
