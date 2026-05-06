@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
+import { ENV } from './config/env';
 
 /**
  * Read environment variables from file.
@@ -42,7 +43,7 @@ export default defineConfig({
             screenshot:'on',
             video:'on',
             trace:'on',
-            baseURL:'https://practice.expandtesting.com/'
+            baseURL:ENV.uiBaseURL
        },
            
 

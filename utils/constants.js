@@ -1,3 +1,4 @@
-export const BASE_URL = 'https://practice.expandtesting.com/';
-
-
+export const ENDPOINTS = {
+    AUTH : '/auth',
+    BOOKINGS : '/booking'
+}
