@@ -1,6 +1,6 @@
 import {test,expect} from '../../fixtures/baseTest'
 import { MultipleWindows } from '../../pages/multipleWindowsPage'
-import { openNewPage } from '../utils/openNewPage.JS'
+import { openNewPage } from '../../utils/openNewPage'
 
 test("Verify Multipe pages",async({browser})=>{
     const context = await browser.newContext()
