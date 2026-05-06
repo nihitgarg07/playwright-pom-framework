@@ -1,5 +1,5 @@
-import {test,expect} from '../fixtures/baseTest'
-import { AutoComplete } from '../pages/autoCompletePage'
+import {test,expect} from '../../fixtures/baseTest'
+import { AutoComplete } from '../../pages/autoCompletePage'
 
 test("Verify Automplete Functionality",async ({page})=>{
 

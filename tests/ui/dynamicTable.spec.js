@@ -1,6 +1,6 @@
-import {test,expect} from '../fixtures/baseTest'
-import { DynamicTablePage } from '../pages/dynamicTablePage'
-import test_data from '../test_data/dynamicTableData.json'
+import {test,expect} from '../../fixtures/baseTest'
+import { DynamicTablePage } from '../../pages/dynamicTablePage'
+import test_data from '../../test_data/dynamicTableData.json'
 
 test("Verify Dynamic Table",async ({page})=>{
     const dynamicTablePage = new DynamicTablePage(page)

@@ -1,5 +1,5 @@
-import {test,expect} from '../fixtures/baseTest'
-import { KeyPress } from '../pages/keyPressPage'
+import {test,expect} from '../../fixtures/baseTest'
+import { KeyPress } from '../../pages/keyPressPage'
 
 test("Verify Enter Key press",async({page})=>{
 

@@ -1,6 +1,6 @@
-import {test,expect} from "../fixtures/baseTest"
-import {RegisterPage} from "../pages/registerPage"
-import test_data from "../test_data/userData.json"
+import {test,expect} from "../../fixtures/baseTest"
+import {RegisterPage} from "../../pages/registerPage"
+import test_data from "../../test_data/userData.json"
 
 test("Verify register form Validation",async({page})=>{
     const registerPage = new RegisterPage(page)

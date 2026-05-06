@@ -1,5 +1,5 @@
-import {test,expect} from '../fixtures/baseTest'
-import { Iframe } from '../pages/iframePage'
+import {test,expect} from '../../fixtures/baseTest'
+import { Iframe } from '../../pages/iframePage'
 
 test("Verify Iframe",async ({page})=>{
 

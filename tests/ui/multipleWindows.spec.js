@@ -1,5 +1,5 @@
-import {test,expect} from '../fixtures/baseTest'
-import { MultipleWindows } from '../pages/multipleWindowsPage'
+import {test,expect} from '../../fixtures/baseTest'
+import { MultipleWindows } from '../../pages/multipleWindowsPage'
 import { openNewPage } from '../utils/openNewPage.JS'
 
 test("Verify Multipe pages",async({browser})=>{

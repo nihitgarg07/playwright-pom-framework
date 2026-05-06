@@ -1,5 +1,5 @@
-import {test,expect} from '../fixtures/baseTest'
-import { SlownessPage } from '../pages/slownessResourcePage'
+import {test,expect} from '../../fixtures/baseTest'
+import { SlownessPage } from '../../pages/slownessResourcePage'
 
 
 test("Verify resource Slowness",async ({page})=>{

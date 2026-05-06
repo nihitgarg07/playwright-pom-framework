@@ -1,5 +1,5 @@
-import {test,expect} from '../fixtures/baseTest'
-import { FileUpload } from '../pages/fileUploadPage'
+import {test,expect} from '../../fixtures/baseTest'
+import { FileUpload } from '../../pages/fileUploadPage'
 
 test("verify file upload",async ({page})=>{
 

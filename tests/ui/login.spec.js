@@ -1,6 +1,6 @@
-import {test,expect} from '../fixtures/baseTest'
-import test_data from '../test_data/userData.json'
-import { LoginPage } from '../pages/LoginPage'
+import {test,expect} from '../../fixtures/baseTest'
+import test_data from '../../test_data/userData.json'
+import { LoginPage } from '../../pages/LoginPage'
 
 test.describe("Verify login Functionality",()=>{
         test(`Login with Valid User Name and Password`,async({page})=>{
