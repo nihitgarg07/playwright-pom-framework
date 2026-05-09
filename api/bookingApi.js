@@ -1,14 +1,31 @@
 import { ApiClient } from "../utils/apiClient"
-import {ENDPOINTS} from '../utils/constants.js'
- 
+import { ENDPOINTS, HEADERS, getCookie } from '../utils/constants.js'
+import createBooking from '../test_data/createBooking.json'
+import updateBooking from '../test_data/updateBooking.json'
 
-export class BookingApi{
 
-    constructor(request){
+export class BookingApi {
+
+    constructor(request) {
         this.client = new ApiClient(request)
     }
 
-    async getBookingIds(){
-       return await this.client.get(ENDPOINTS.BOOKINGS)
+    async getBookingIds(id) {
+        if (id) {
+            return await this.client.get(ENDPOINTS.BOOKINGS + id)
+        }
+        else {
+            return await this.client.get(ENDPOINTS.BOOKINGS)
+        }
     }
+
+    async createBooking() {
+        return await this.client.post(ENDPOINTS.BOOKINGS, createBooking,{headers:{...HEADERS.CONTENT_TYPE}})
+    }
+
+    async updateBooking(id, token) {
+        return await this.client.put(ENDPOINTS.BOOKINGS + id,updateBooking , { headers:{...HEADERS.CONTENT_TYPE, ...HEADERS.ACCEPT, ...getCookie(token)} })
+    }
+
+
 }

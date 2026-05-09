@@ -1,0 +1,13 @@
+{
+  "firstname": "Updated Nihit",
+  "lastname": "Updated Garg",
+  "totalprice": 111,
+  "depositpaid": true,
+
+  "bookingdates": {
+    "checkin": "2026-05-09",
+    "checkout": "2026-05-09"
+  },
+
+  "additionalneeds": "Breakfast"
+}
