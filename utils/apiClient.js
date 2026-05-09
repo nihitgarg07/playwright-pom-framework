@@ -22,4 +22,12 @@ export class ApiClient {
     async put(endPoint, data, options = {}) {
         return await this.request.put(this.baseUrl + endPoint, { data: data, ...options })
     }
+
+    async patch(endPoint,data,options = {}){
+        return await this.request.patch(this.baseUrl+endPoint,{data:data,...options})
+    }
+
+    async delete(endpoint,options= {}){
+        return await this.request.delete(this.baseUrl+endpoint,{...options})
+    }
 }

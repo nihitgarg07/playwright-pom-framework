@@ -12,7 +12,6 @@ export class Iframe{
         this.emailIframe = "//iframe[@id='email-subscribe']"
         this.editorFrame = page.frameLocator(this.editorIframe)
         this.emailframe = page.frameLocator(this.emailIframe)
-
         this.inputTextArea = this.editorFrame.locator("//body[@id='tinymce']")
         this.emailInput = this.emailframe.locator("//input[@id='email']")
         this.submitButton = this.emailframe.locator("//button[@id='btn-subscribe']")
@@ -27,11 +26,11 @@ export class Iframe{
     async enterEditorText(text){
         await this.inputTextArea.scrollIntoViewIfNeeded()
        // await this.inputTextArea.clear()
-        await this.inputTextArea.fill(text)
+        await this.inputTextArea.type(text)
     }
 
     async enterInputEmail(email){
-        await this.emailInput.fill(email)
+        await this.emailInput.type(email)
     }
 
     async submitButtonClick(){
