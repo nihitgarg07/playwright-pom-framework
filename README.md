@@ -1,13 +1,29 @@
 # Playwright Automation Framework
 
-Automation framework built using Playwright with:
+A scalable Playwright Automation Framework built using JavaScript with support for:
 
 - UI Automation
 - API Automation
 - Page Object Model (POM)
 - Allure Reporting
+- Environment Variables (.env)
+- Reusable API Client
 - Fixtures
-- Reusable Utilities
+- JSON Test Data Handling
+
+---
+
+# 🚀 Features
+
+✅ UI Automation using Playwright  
+✅ API Automation using Playwright Request Context  
+✅ Page Object Model (POM) Design Pattern  
+✅ Reusable API Client Architecture  
+✅ Fixtures Support  
+✅ Environment Variable Support (.env)  
+✅ JSON Test Data Management  
+✅ Allure Reporting Integration  
+✅ GitHub Integrated Project Structure  
 
 ---
 
@@ -17,30 +33,35 @@ Automation framework built using Playwright with:
 project-root/
 
 ├── api/
+│   ├── authApi.js
+│   ├── bookingApi.js
+│
 ├── config/
+│   └── env.js
+│
 ├── fixtures/
+│   └── baseTest.js
+│
 ├── pages/
+│
 ├── test_data/
+│
 ├── tests/
 │   ├── api/
-│   ├── ui/
+│   └── ui/
+│
 ├── utils/
+│   ├── apiClient.js
+│   ├── constants.js
+│   ├── fileChooser.js
+│   └── openNewPage.js
+│
+├── .env
+├── .gitignore
 ├── playwright.config.js
 ├── package.json
+└── README.md
 ```
-
----
-
-# 🚀 Features
-
-✅ UI Automation  
-✅ API Automation  
-✅ Page Object Model  
-✅ Reusable API Client  
-✅ Fixtures Support  
-✅ Allure Reporting  
-✅ JSON Test Data Support  
-✅ Environment Config Support
 
 ---
 
@@ -50,10 +71,19 @@ project-root/
 - Playwright
 - Node.js
 - Allure Reports
+- Dotenv
 
 ---
 
 # 📦 Installation
+
+Clone repository:
+
+```bash
+git clone <your-repository-url>
+```
+
+Install dependencies:
 
 ```bash
 npm install
@@ -61,7 +91,19 @@ npm install
 
 ---
 
-# ▶️ Run Tests
+# 🔐 Environment Configuration
+
+Create `.env` file in root folder:
+
+```env
+UI_BASE_URL=https://practice.expandtesting.com
+
+API_BASE_URL=https://restful-booker.herokuapp.com
+```
+
+---
+
+# ▶️ Running Tests
 
 Run all tests:
 
@@ -87,6 +129,12 @@ Run specific test:
 npx playwright test --grep "Verify Create Booking"
 ```
 
+Run headed mode:
+
+```bash
+npx playwright test --headed
+```
+
 ---
 
 # 📊 Allure Reporting
@@ -105,16 +153,17 @@ npx allure open allure-report
 
 ---
 
-# 🔐 Environment Config
+# 📌 Framework Highlights
 
-Environment variables are managed using:
-
-```bash
-config/env.js
-```
+- Centralized API request handling
+- Reusable headers and endpoints
+- Dynamic token generation
+- Reusable fixtures
+- Clean folder architecture
+- Modular and scalable framework design
 
 ---
 
 # 👨‍💻 Author
 
-Nihit
+Nihit Garg
