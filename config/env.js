@@ -1,7 +1,11 @@
+import dotenv from 'dotenv'
+
+dotenv.config()
+
 export const ENV = {
 
-  uiBaseURL: 'https://practice.expandtesting.com',
+  uiBaseURL: process.env.UI_BASE_URL,
 
-  apiBaseURL: 'https://restful-booker.herokuapp.com'
+  apiBaseURL: process.env.API_BASE_URL
 
 }
